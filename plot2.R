@@ -7,7 +7,7 @@ data2$DateTime <- strptime(data2$DateTime, format = "%d/%m/%Y %H:%M:%S")
 gap <- as.numeric(paste(data2$Global_active_power))
 #quartz() # in Mac
 #windows() #in Windows
-x11() #Linux
+x11() # in Linux
 plot(data2$DateTime, gap, type="l", xlab=" ", ylab="Global Active Power (kilowatts)")
 
 savePlot(filename = paste("plot2.png"),
