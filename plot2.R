@@ -9,7 +9,7 @@ gap <- as.numeric(paste(data2$Global_active_power))
 #windows() #in Windows
 x11() # in Linux
 plot(data2$DateTime, gap, type="l", xlab=" ", ylab="Global Active Power (kilowatts)")
-# cs, p, szo are mean Thr Fri Sat in Hungarian!!!
+# cs, p, szo are meaning Thr Fri Sat in Hungarian!!!
 savePlot(filename = paste("plot2.png"),
          type = "png",
          device = dev.cur())
